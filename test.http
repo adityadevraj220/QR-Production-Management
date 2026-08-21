@@ -1,0 +1,25 @@
+### CREATE – Student (IsChecked defaults to false)
+POST http://localhost:4004/odata/v4/student-data-services/STUDENT
+Content-Type: application/json
+
+{
+  "Roll": "98989787",
+  "Name": "Aditya nkjnkjnjnkjnkjn",
+  "Phone": "9999999999"
+}
+
+### CREATE – Student (IsChecked = true)
+POST http://localhost:4004/odata/v4/student-data-services/STUDENT
+Content-Type: application/json
+
+{
+  "Roll": "R002",
+  "Name": "Rahul Sharma",
+  "Phone": "8888888888",
+  "IsChecked": true
+}
+
+
+### READ – All Students
+GET http://localhost:4004/odata/v4/student-data-services/STUDENT
+

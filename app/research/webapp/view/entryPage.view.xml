@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="research.controller.entryPage"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<Page
+        title="Student Entry"
+        class="sapUiContentPadding">
+		<content>
+			<VBox
+                class="sapUiSmallMargin"
+                alignItems="Center"
+                justifyContent="Center">
+				<!-- SimpleForm from sap.ui.layout.form -->
+				<form:SimpleForm
+                id="studentForm"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanL="3"
+                labelSpanM="3"
+                emptySpanL="0"
+                emptySpanM="0"
+                columnsL="1"
+                columnsM="1"
+                width="450px">
+					<!-- Roll -->
+					<Label text="Roll" />
+					<Input value="{student>/Roll}" placeholder="Enter Roll"/>
+					<!-- Name -->
+					<Label text="Name" />
+					<Input value="{student>/Name}" placeholder="Enter Name"/>
+					<!-- Phone -->
+					<Label text="Phone" />
+					<Input value="{student>/Phone}" type="Tel" placeholder="Enter Phone"/>
+					<!-- Active Checkbox -->
+					<Label text="Still Studying" />
+					<CheckBox selected="{student>/IsChecked}" text="Studying"/>
+					<!-- Save Button -->
+					<Button
+                    text="Save"
+                    type="Emphasized"
+                    press="onSave" />
+				</form:SimpleForm>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

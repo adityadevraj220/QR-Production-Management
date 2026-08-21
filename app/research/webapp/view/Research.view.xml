@@ -1,0 +1,22 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:tnt="sap.tnt" 
+    controllerName="research.controller.Research">
+	<tnt:ToolHeader id="configHomePageToolHeaderId" class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginTop">
+		<ToolbarSpacer id="homePageHeaderId"/>
+		<FlexBox id="masterDashboradContainer" renderType="Bare" wrap="Wrap" justifyContent="Center" alignItems="Center" width="100%" class="tileContainer">
+			<Title id="pageHeader" text="Research" class="title-color"/>
+		</FlexBox>
+	</tnt:ToolHeader>
+	<Page id="masterDashboardPageID" showHeader="false">
+		<FlexBox id="masterDashboard_FlexBox1" class="masterFlexBox">
+			<GenericTile id="IdConfigTile" class="sapUiSmallMarginBegin sapUiSmallMarginTop tileLayout" header="Data Entry" press="onPressDataEntry">
+				<TileContent id="IdConfigContent">
+					<ImageContent id="IdConfigIcon" src="sap-icon://developer-settings"/>
+				</TileContent>
+			</GenericTile>
+		</FlexBox>
+	</Page>
+</mvc:View>

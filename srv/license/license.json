@@ -1,0 +1,9 @@
+{
+  "student": {
+    "limit": 3,
+    "used": 3
+  },
+  "validity": {
+    "validTill": "2029-12-31"
+  }
+}
